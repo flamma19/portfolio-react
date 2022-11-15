@@ -3,8 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import python from "../assets/img/python.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import css from "../assets/img/css.svg";
+import django from "../assets/img/django.svg";
+import html from "../assets/img/html.svg";
+import javascript from "../assets/img/java-script.svg";
+import jquery from "../assets/img/jquery.svg";
+import reactLogo from "../assets/img/reactLogo.svg";
+
 import colorSharp from "../assets/img/color-sharp.png";
 
 const Skills = () => {
@@ -53,28 +58,24 @@ const Skills = () => {
                   <h5>Python</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="image" />
+                  <img src={django} alt="image" />
                   <h5>Django</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="image" />
+                  <img src={html} alt="image" />
                   <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={python} alt="image" />
+                  <img src={css} alt="image" />
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="image" />
+                  <img src={javascript} alt="image" />
                   <h5>Java Script</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="image" />
+                  <img src={reactLogo} alt="image" />
                   <h5>React.js</h5>
-                </div>
-                <div className="item">
-                  <img src={python} alt="image" />
-                  <h5>JQuery.js</h5>
                 </div>
               </Carousel>
             </div>

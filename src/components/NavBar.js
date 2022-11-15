@@ -78,13 +78,16 @@ const NavBar = () => {
                 <img src={navIcon1} alt="linkedin" />
               </a>
               <a href="#">
-                <img src={navIcon2} alt="facebook" />
+                <img src={navIcon2} alt="github" />
               </a>
               <a href="#">
                 <img src={navIcon3} alt="instagram" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button
+              className="vvd"
+              onClick={() => alert("Call Me : 09100571663")}
+            >
               <span>Let's Connect</span>
             </button>
           </span>

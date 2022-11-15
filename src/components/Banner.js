@@ -78,10 +78,6 @@ const Banner = () => {
                     Learning Django after that and finally Learn HTML,CSS,JS and
                     React by the end of Aban'
                   </p>
-                  <button onCanPlay={() => console.log("connect")}>
-                    Let's Connect
-                    <ArrowRightCircle size={25} />
-                  </button>
                 </div>
               )}
             </TrackVisibility>
