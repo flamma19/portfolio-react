@@ -18,21 +18,27 @@ const Projects = () => {
       title: "GlassMorphism Card Design",
       description: "HTML & CSS & JS",
       imgUrl: glassCards,
+      address:
+        "https://flamma19.github.io/mini-codes/glass-morphism-card/index.html",
     },
     {
       title: "GlassMorphism Buttons",
       description: "HTML & CSS & JS",
       imgUrl: glassButtons,
+      address:
+        "https://flamma19.github.io/mini-codes/glass-morphism-button/index.html",
     },
     {
       title: "Weather Application",
       description: "HTML & CSS & JS with using some API",
       imgUrl: weatherApp,
+      address: "https://flamma19.github.io/weather-app/",
     },
     {
       title: "Dashboard UI",
       description: "HTML & CSS & JS",
       imgUrl: dashboardUi,
+      address: "https://flamma19.github.io/dashboard-sample1/",
     },
   ];
   const backProjects = [
@@ -40,11 +46,13 @@ const Projects = () => {
       title: "Blog Site",
       description: "Python & Django",
       imgUrl: blogSite,
+      address: "https://github.com/flamma19/drf_project",
     },
     {
       title: "Quera College Final Test ( Charity Site )",
       description: "Python & Django",
       imgUrl: queraApp,
+      address: "https://github.com/flamma19/quera_project",
     },
   ];
   const fullProjects = [
@@ -53,6 +61,7 @@ const Projects = () => {
       description:
         "Python & Django for BackEnd and HTML & CSS & JS & React for FrontEnd",
       imgUrl: noteApp,
+      address: "https://github.com/flamma19/note-app-react-django-",
     },
   ];
 
