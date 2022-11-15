@@ -1,44 +1,58 @@
 import React from "react";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import blogSite from "../assets/img/projects/blog-site.jpg";
+import dashboardUi from "../assets/img/projects/dashboard-ui.jpg";
+import glassButtons from "../assets/img/projects/glass-buttons.jpg";
+import glassCards from "../assets/img/projects/glass-cards.jpg";
+import noteApp from "../assets/img/projects/note-app.jpg";
+import queraApp from "../assets/img/projects/quera-app.jpeg";
+import weatherApp from "../assets/img/projects/weather-app.jpg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
 
+// Make a list of projects based on their category
 const Projects = () => {
-  const projects = [
+  const frontProjects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "GlassMorphism Card Design",
+      description: "HTML & CSS & JS",
+      imgUrl: glassCards,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "GlassMorphism Buttons",
+      description: "HTML & CSS & JS",
+      imgUrl: glassButtons,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Weather Application",
+      description: "HTML & CSS & JS with using some API",
+      imgUrl: weatherApp,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Dashboard UI",
+      description: "HTML & CSS & JS",
+      imgUrl: dashboardUi,
+    },
+  ];
+  const backProjects = [
+    {
+      title: "Blog Site",
+      description: "Python & Django",
+      imgUrl: blogSite,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Quera College Final Test ( Charity Site )",
+      description: "Python & Django",
+      imgUrl: queraApp,
     },
+  ];
+  const fullProjects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Note App",
+      description:
+        "Python & Django for BackEnd and HTML & CSS & JS & React for FrontEnd",
+      imgUrl: noteApp,
     },
   ];
 
@@ -56,25 +70,40 @@ const Projects = () => {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
+                  <Nav.Link eventKey="first">FrontEnd Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                  <Nav.Link eventKey="second">FullStack Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                  <Nav.Link eventKey="third">BackEnd Projects</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content id="sliceInUp">
                 <Tab.Pane eventKey="first">
+                  {/* A loop that iterates over the array of objects and returns a new array of JSX
+                  elements that address to another component ProjectCard. */}
+
                   <Row>
-                    {projects.map((project, index) => {
+                    {frontProjects.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="section">Lorem Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Row>
+                    {fullProjects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  <Row>
+                    {backProjects.map((project, index) => {
+                      return <ProjectCard key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/textbw.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -34,7 +34,7 @@ const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" />
+          <h1 class="textlogo1">FLAMMA</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -73,14 +73,15 @@ const NavBar = () => {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
+            {/* Social App links */}
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/mahdivafaii1999/">
                 <img src={navIcon1} alt="linkedin" />
               </a>
-              <a href="#">
+              <a href="https://github.com/flamma19">
                 <img src={navIcon2} alt="github" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/flamma_19/">
                 <img src={navIcon3} alt="instagram" />
               </a>
             </div>
